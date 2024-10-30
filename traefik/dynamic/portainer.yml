@@ -1,7 +1,7 @@
 http:
   routers:
     portainer:
-      rule: "Host(`portainer.lab.ehcan.me`)"
+      rule: "Host(`portainer.techomelab.com`)"
       entryPoints:
         - websecure
       service: portainer
@@ -9,7 +9,7 @@ http:
     portainer:
       loadBalancer:
         servers:
-          - url: "https://192.168.2.121:9443"
+          - url: "https://192.168.86.22:9443"
         serversTransport: portainerTransport
   serversTransports:
     portainerTransport:

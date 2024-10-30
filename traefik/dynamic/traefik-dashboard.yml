@@ -1,7 +1,7 @@
 http:
   routers:
     traefik:
-      rule: "Host(`traefik.lab.ehcan.me`)"
+      rule: "Host(`traefik.techomelab.com`)"
       entryPoints:
         - websecure
       service: api@internal

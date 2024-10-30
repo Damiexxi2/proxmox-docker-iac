@@ -1,7 +1,7 @@
 http:
   routers:
     uptime:
-      rule: "Host(`uptime.lab.ehcan.me`)"
+      rule: "Host(`omada.techomelab.com`)"
       entryPoints:
         - websecure
       service: uptime
@@ -9,4 +9,4 @@ http:
     uptime:
       loadBalancer:
         servers:
-          - url: "http://192.168.2.121:3001"
+          - url: "http://192.168.86.10:8043"

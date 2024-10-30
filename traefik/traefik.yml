@@ -12,9 +12,9 @@ entryPoints:
       tls:
         certResolver: letsencrypt
         domains:
-          - main: "lab.ehcan.me"
+          - main: "techomelab.com"
             sans:
-              - "*.lab.ehcan.me"
+              - "*.techomelab.com"
 
 providers:
   file:
@@ -24,7 +24,7 @@ providers:
 certificatesResolvers:
   letsencrypt:
     acme:
-      email: letsencrypt@ehcan.me
+      email: techomelab1@gmail.com
       storage: /letsencrypt/acme.json
       dnsChallenge:
         provider: cloudflare
